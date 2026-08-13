@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kultur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* BOX-SIZING:border-box */
+
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* background-image: url("germanic_disc.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; */
+
+        }
+
+        header {
+            background-color: rgb(62, 2, 2);
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        .logo {
+            padding: 25px;
+            color: goldenrod;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 17px;
+            flex-direction: column;
+
+        }
+
+        .logo h1 {
+            font-weight: bolder;
+        }
+
+        .logo p {
+            font-size: smaller;
+        }
+
+        .navb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navl {
+            list-style: none;
+            display: flex;
+
+        }
+
+        .navl a {
+            display: block;
+            padding: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+            border-right: 1px solid white;
+            text-align: center;
+            flex: 1;
+            transition: 0.3s ease;
+        }
+
+        .navl li:last-child a {
+            border-right: none;
+        }
+
+        .navl a:hover {
+            background-color: rgb(218, 165, 32);
+            color: rgb(31, 1, 1);
+            font-weight: bolder;
+        }
+
+        main {
+            flex: 1;
+            background-color: goldenrod;
+            display: flex;
+            /* overflow: hidden; */
+            /* height:100%; */
+            flex-direction: column;
+        }
+
+        .hero {
+            padding: 30px;
+            text-align: center;
+            /* margin: 15px 15px; */
+            display: flex;
+            color: white;
+            /* font-weight: bolder; */
+            background-color: rgb(74, 34, 1);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            /* flex:0 0 40%; */
+            min-height: 40vh;
+        }
+
+        .hero h1 {
+            font-weight: bolder;
+        }
+
+        .hero h2 {
+            font-weight: lighter;
+            line-height: 35px;
+        }
+
+        .btn {
+            background-color: rgb(90, 2, 2);
+            color: white;
+            padding: 9px;
+            border-radius: 10%;
+            width: fit-content;
+        }
+
+        .cardsection {
+            flex: 1;
+            padding: 15px 15px;
+            /* margin: 15px 15px; */
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            justify-content: center;
+            /* align-items: center; */
+            gap: 30px;
+            min-height: 0;
+            /* overflow: hidden; */
+        }
+
+        .card {
+            /* overflow: hidden; */
+            /* max-height: 100%; */
+            background-color: rgb(255, 228, 196);
+            color: black;
+            flex: 1;
+            text-align: center;
+            padding: 6rem;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            gap: 30px;
+        }
+
+        .card p {
+            font-size: larger;
+        }
+
+        .imgsec {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 68vw;
+            margin: auto;
+            /* gap:2rem; */
+        }
+
+        figure {
+            width: 20vw;
+            height: auto;
+            /* border:1px solid black; */
+            padding: 2px 0;
+        }
+
+        figure img {
+            width: auto;
+            height: 35vh;
+            border: 1px solid black;
+        }
+
+        figcaption {
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        @media(max-width:768px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .hero {
+                padding: 6rem;
+            }
+
+            .navb {
+                position: absolute;
+                top: 100%;
+                background-color: rgb(62, 2, 2, 0.97);
+                width: 100%;
+            }
+
+            .navl {
+                display: flex;
+            }
+
+            .hero {
+                padding: 6rem 2rem;
+            }
+
+            .cardsection {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .card {
+                width: 90%;
+                margin: auto;
+                padding: 30px;
+            }
+
+            .imgsec {
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+            }
+
+            figure {
+                width: 90%;
+                margin: auto;
+
+            }
+
+            figure img {
+                width: 97%;
+                height: auto;
+            }
+
+            .mid {
+                padding: 2rem;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1> Jai Kumars</h1>
+            <p> Website Mit Germanischer Ästhetik</p>
+        </div>
+        <div class="navb">
+            <ul class="navl">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="konige.html">Könige</a></li>
+                <li><a href="#">Germanische Kultur</a></li>
+                <li><a href="kontact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Die germanische Kultur</h1>
+            <h2>Die germanische Kultur besitzt ein reiches Erbe, das sich über Jahrhunderte entwickelt hat und bis heute
+                Kunst,
+                Literatur und Traditionen prägt. Ihre Geschichte ist geprägt von einer tiefen Verbundenheit mit der
+                Natur, von
+                handwerklichem Können und von Gemeinschaftssinn. In den alten Wäldern, Bergen und Flüssen entstanden
+                Erzählungen, die
+                Mut, Weisheit und die Achtung vor den Kräften der Natur in den Mittelpunkt stellen. Viele Bräuche und
+                Feste erinnern
+                noch heute an diese historischen Wurzeln und verbinden Vergangenheit und Gegenwart.
+
+                Ebenso faszinierend ist die germanische Sagenwelt mit ihren Helden, Göttern und geheimnisvollen Wesen.
+                Geschichten über
+                Odin, Thor und Freyja sowie Legenden von Zwergen, Elfen und den Walküren spiegeln die Fantasie und die
+                Werte der
+                Menschen wider, die sie erzählten. Diese Mythen haben zahlreiche Schriftsteller, Künstler und
+                Komponisten inspiriert und
+                üben bis heute weltweit großen Einfluss auf Literatur, Musik und moderne Fantasy aus. Das kulturelle
+                Erbe der
+                germanischen Völker ist ein bedeutender Teil der europäischen Geschichte und wird weiterhin mit
+                Interesse erforscht und
+                geschätzt.</h2>
+        </section>
+        <section class="cardsection">
+            <div class="card">
+                <p>Die Märchentradition gehört zu den bekanntesten und einflussreichsten Schätzen der germanischen
+                    Kultur. Über
+                    Generationen hinweg wurden Geschichten von mutigen Helden, verwunschenen Wäldern, sprechenden Tieren
+                    und geheimnisvollen
+                    Zauberwesen mündlich weitergegeben, bevor sie aufgeschrieben wurden. Einen unschätzbaren Beitrag zur
+                    Bewahrung dieses
+                    Erbes leisteten die Brüder Grimm, die im 19. Jahrhundert zahlreiche Volksmärchen sammelten und
+                    veröffentlichten. Werke
+                    wie Hänsel und Gretel, Schneewittchen, Rotkäppchen und Dornröschen sind heute weltweit bekannt und
+                    vermitteln zeitlose
+                    Themen wie Mut, Klugheit, Gerechtigkeit und Hoffnung. Bis heute prägen diese Märchen Literatur,
+                    Theater, Film und die
+                    Fantasie von Menschen auf der ganzen Welt.</p>
+
+                <div class="imgsec">
+                    <figure>
+                        <img src="germanic_fairy.jpg">
+                        <figcaption>A maiden with deer</figcaption>
+                    </figure>
+                    <figure class="mid">
+                        <img src="sleeping_beauty_com.jpg">
+                        <figcaption>Sleeping Beauty</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="water_of_life.jpg">
+                        <figcaption>Water of Life</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2> © Jai 2026</h2>
+    </footer>
+</body>
+
+</html>

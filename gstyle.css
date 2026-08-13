@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* BOX-SIZING:border-box */
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("germanic_fairy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    background-color: rgb(62, 2, 2, 0.97);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.logo {
+    padding: 25px;
+    color: goldenrod;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+
+}
+
+.logo h1 {
+    font-weight: bolder;
+}
+
+.logo p {
+    font-size: smaller;
+}
+
+.navb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navl {
+    list-style: none;
+    display: flex;
+
+}
+
+.navl a {
+    display: block;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.navl li:last-child a {
+    border-right: none;
+}
+
+.navl a:hover {
+    background-color: rgb(218, 165, 32, 0.97);
+    color: rgb(31, 1, 1);
+    font-weight: bolder;
+}
+
+main {
+    flex: 1;
+    background-color: transparent;
+    display: flex;
+    /* overflow: hidden; */
+    /* height:100%; */
+    flex-direction: column;
+}
+
+.hero {
+    margin: 15px 15px;
+    display: flex;
+    color: white;
+    /* font-weight: bolder; */
+    background-color: rgb(74, 34, 1, 0.76);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* flex:0 0 40%; */
+    min-height: 40vh;
+}
+
+.hero h2 {
+    font-weight: bolder;
+}
+
+.btn {
+    background-color: rgb(90, 2, 2);
+    color: white;
+    padding: 9px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.cardsection {
+    flex: 1;
+    padding: 15px 15px;
+    margin: 15px 15px;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.85);
+    justify-content: center;
+    /* align-items: center; */
+    gap: 30px;
+    min-height: 0;
+    /* overflow: hidden; */
+}
+
+.card {
+    /* overflow-y: auto; */
+    max-height: 100%;
+    background-color: rgb(255, 228, 196, 0.8);
+    color: black;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+}
+
+.card h2 {
+    font-weight: bolder;
+
+}
+
+.card p {
+    font-weight: bold;
+    font-size: larger;
+    line-height: 28px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0, 0.85);
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .hero {
+        margin: 6rem 2rem 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .navb {
+        position: absolute;
+        top: 100%;
+        background-color: rgb(62, 2, 2, 0.97);
+        width: 100%;
+    }
+
+    .navl {
+        display: flex;
+    }
+
+    .cardsection {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Practice Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* BOX-SIZING:border-box */
+
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* background-image: url("germanic_disc.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; */
+
+        }
+
+        header {
+            background-color: rgb(62, 2, 2);
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        .logo {
+            padding: 25px;
+            color: goldenrod;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 17px;
+            flex-direction: column;
+
+        }
+
+        .logo h1 {
+            font-weight: bolder;
+        }
+
+        .logo p {
+            font-size: smaller;
+        }
+
+        .navb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navl {
+            list-style: none;
+            display: flex;
+
+        }
+
+        .navl a {
+            display: block;
+            padding: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+            border-right: 1px solid white;
+            text-align: center;
+            flex: 1;
+            transition: 0.3s ease;
+        }
+
+        .navl li:last-child a {
+            border-right: none;
+        }
+
+        .navl a:hover {
+            background-color: rgb(218, 165, 32);
+            color: rgb(31, 1, 1);
+            font-weight: bolder;
+        }
+
+        main {
+            flex: 1;
+            background-color: goldenrod;
+            display: flex;
+            /* overflow: hidden; */
+            /* height:100%; */
+            flex-direction: column;
+        }
+
+        .hero {
+            padding: 30px;
+            text-align: center;
+            /* margin: 15px 15px; */
+            display: flex;
+            color: white;
+            /* font-weight: bolder; */
+            background-color: rgb(74, 34, 1);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            /* flex:0 0 40%; */
+            min-height: 40vh;
+        }
+
+        .hero h1 {
+            font-weight: bolder;
+        }
+
+        .hero h2 {
+            font-weight: lighter;
+            line-height: 35px;
+        }
+
+        .btn {
+            background-color: rgb(90, 2, 2);
+            color: white;
+            padding: 9px;
+            border-radius: 15px;
+            width: fit-content;
+        }
+
+        .cardsection {
+            flex: 1;
+            padding: 15px 15px;
+            /* margin: 15px 15px; */
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            justify-content: center;
+            /* align-items: center; */
+            gap: 30px;
+            min-height: 0;
+            /* overflow: hidden; */
+        }
+
+        .card {
+            /* overflow: hidden; */
+            /* max-height: 100%; */
+            background-color: rgb(255, 228, 196);
+            color: black;
+            flex: 1;
+            text-align: center;
+            /* padding: 20px; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* gap: 30px; */
+        }
+
+        .ptr {
+            width: 100%;
+            height: 580px;
+            overflow: hidden;
+        }
+
+        .ptr img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+        }
+
+        .nm {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card h2 {
+            font-weight: bolder;
+            /* margin-bottom: 25px;; */
+
+        }
+
+        .card p {
+            font-weight: bold;
+            font-size: larger;
+            /* line-height: 28px; */
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        @media(max-width:768px) {
+            header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .hero {
+                padding: 6rem 2rem;
+            }
+
+            .navb {
+                position: absolute;
+                top: 100%;
+                background-color: rgb(62, 2, 2, 0.97);
+                width: 100%;
+            }
+
+            .navl {
+                display: flex;
+            }
+
+            .cardsection {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .card {
+                width: 90%;
+                margin: auto;
+            }
+
+
+        }
+    </style>
+    <script>
+        function ankng() {
+            window.location.href = "konige.html";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1> Jai Kumars</h1>
+            <p> Website Mit Germanischer Ästhetik</p>
+        </div>
+        <div class="navb">
+            <ul class="navl">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="konige.html">Könige</a></li>
+                <li><a href="kultur.html">Germanische Kultur</a></li>
+                <li><a href="kontact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="history">
+            <h1>Die Großen Deutschen Könige</h1>
+            <h2>Das Land, das wir heute Deutschland nennen, war im Mittelalter das Zentrum mehrerer Königreiche. Das
+                früheste war das
+                Ostfrankenreich, ein Teil des Karolingerreiches. Darauf folgte das Heilige Römische Reich, und später
+                das preußische
+                Königreich.</h2>
+
+            <h2>Hier werden sechs große deutsche Könige vorgestellt. Mit Ausnahme von Heinrich dem Vogler und Friedrich
+                dem Großen waren
+                alle diese Herrscher Kaiser des Heiligen Römischen Reiches. Heinrich der Vogler war König des
+                Ostfrankenreichs, während
+                Friedrich der Große ein König aus dem Hause Hohenzollern in Preußen war.</h2>
+            <h2>Um einige große angelsächsische Könige Englands zu sehen, drücken Sie bitte den Button "Angelsächsische
+                Könige ansehen".</h2>
+            <button class="btn" onclick="ankng()">Angelsächsische Könige ansehen</button>
+        </section>
+        <section class="cardsection">
+
+            <div class="card">
+                <div class="ptr">
+                    <img src="heinrich.jpg">
+                </div>
+                <div class="nm">
+                    <h2>Heinrich der Vogler</h2>
+                    <p>(919-936)</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ptr">
+                    <img src="ottoi.jpg">
+                </div>
+                <div class="nm">
+                    <h2>Otto I</h2>
+                    <p>(936-973)</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ptr">
+                    <img src="konrad.jpg">
+                </div>
+                <div class="nm">
+                    <h2>Konrad II</h2>
+                    <p>(1024-1039)</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECOND ROW (optional) -->
+        <section class="cardsection">
+
+            <div class="card">
+                <div class="ptr">
+                    <img src="heinrichivcom.jpg">
+                </div>
+                <div class="nm">
+                    <h2>Heinrich IV</h2>
+                    <p>(1056-1106)</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ptr">
+                    <img src="barbarosa.jpg">
+                </div>
+                <div class="nm">
+                    <h2>Freidrich I</h2>
+                    <p>(1155-1190)</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ptr">
+                    <img src="freidrichgreat.jpg">
+                </div>
+                <div class="nm">
+                    <h2>Freidrich der Große</h2>
+                    <p>(1740-1786)</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <h2> © Jai 2026</h2>
+    </footer>
+</body>
+
+</html>

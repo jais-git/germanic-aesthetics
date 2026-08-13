@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Practice Page</title>
+    <link rel="stylesheet" href="gstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        function go(page, sectionId) {
+            window.location.href = `${page}#${sectionId}`;
+        }
+        function gokul() {
+            window.location.href = "kultur.html";
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1> Jai Kumars</h1>
+            <p> Website Mit Germanischer Ästhetik</p>
+        </div>
+        <div class="navb">
+            <ul class="navl">
+                <li><a href="#">Startseite</a></li>
+                <li><a href="konige.html">Könige</a></li>
+                <li><a href="kultur.html">Germanische Kultur</a></li>
+                <li><a href="kontact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1> Die Drei Großen Angelsächsischen Könige</h1>
+            <p>Diejenigen, die die Germanisch-Angelsächsische Größe bewahrten</p>
+            <button class="btn" onclick="gokul()">kultur ansehen</button>
+        </section>
+        <section class="cardsection">
+            <div class="card">
+                <h2>Alfred der Große</h2>
+                <p> Alfred der Große war König von Wessex und regierte im 9. Jahrhundert in einer Zeit großer Bedrohung
+                    durch die Wikinger.
+                    Er wurde bekannt für seine militärischen Erfolge gegen die dänischen Invasoren. Besonders berühmt
+                    ist seine Verteidigung
+                    seines Königreichs und die spätere Einigung mit den Wikingern. Alfred organisierte eine starke
+                    Verteidigungsflotte, um
+                    Küstenangriffe zu stoppen. Außerdem förderte er Bildung und ließ wichtige lateinische Werke ins
+                    Englische übersetzen. Er
+                    gilt als einer der wenigen englischen Herrscher, der sowohl Krieger als auch Gelehrter war. Seine
+                    Gesetzgebung bildete
+                    die Grundlage für spätere englische Rechtssysteme. Alfred stärkte die Einheit seines Reiches
+                    erheblich. Sein Erbe
+                    beeinflusste England über viele Jahrhunderte hinweg. Deshalb wird er oft als „Vater des englischen
+                    Volkes“ bezeichnet.
+                </p>
+                <button class="btn" onclick="go('konige.html', 'alfred')">ansehen</button>
+            </div>
+            <div class="card">
+                <h2>Æthelstan</h2>
+                <p> Athelstan gilt als der erste König, der ein vereintes England regierte. Er herrschte im frühen 10.
+                    Jahrhundert und war
+                    ein Enkel von Alfred dem Großen. Unter seiner Führung wurde England politisch stark zentralisiert.
+                    Athelstan besiegte
+                    viele regionale Herrscher und vereinte die englischen Gebiete. Seine wichtigste militärische
+                    Leistung war die Schlacht
+                    von Brunanburh im Jahr 937. Dieser Sieg festigte seine Kontrolle über ganz England. Er führte auch
+                    bedeutende
+                    Gesetzesreformen ein. Athelstan pflegte diplomatische Beziehungen zu europäischen Herrschern. Er
+                    unterstützte Kirche und
+                    Bildung stark. Sein Werk legte den Grundstein für das spätere Königreich England.</p>
+                <button class="btn" onclick="go('konige.html', 'aethel')">ansehen</button>
+            </div>
+            <div class="card">
+                <h2>Harold Godwinson</h2>
+                <p> Harold Godwinson war der letzte angelsächsische König von England. Er bestieg den Thron im Jahr 1066
+                    nach dem Tod von
+                    Edward dem Bekenner. Seine Herrschaft war von mehreren Invasionen bedroht. Zuerst besiegte er die
+                    norwegische Armee
+                    unter Harald Hardrada in der Schlacht von Stamford Bridge. Dieser Sieg war jedoch sehr kostspielig
+                    für seine Truppen.
+                    Kurz danach musste er nach Süden marschieren, um Wilhelm den Eroberer zu begegnen. Die entscheidende
+                    Schlacht fand bei
+                    Hastings statt. Harold kämpfte tapfer, aber seine Armee war erschöpft. Er wurde im Kampf getötet,
+                    vermutlich durch einen
+                    Pfeil ins Auge. Mit seinem Tod endete die angelsächsische Herrschaft in England.</p>
+                <button class="btn" onclick="go('konige.html', 'harold')">ansehen</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2> © Jai 2026</h2>
+    </footer>
+</body>
+
+</html>

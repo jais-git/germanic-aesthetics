@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kultur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* BOX-SIZING:border-box */
+
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* background-image: url("germanic_disc.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; */
+
+        }
+
+        header {
+            background-color: rgb(62, 2, 2);
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        .logo {
+            padding: 25px;
+            color: goldenrod;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 17px;
+            flex-direction: column;
+
+        }
+
+        .logo h1 {
+            font-weight: bolder;
+        }
+
+        .logo p {
+            font-size: smaller;
+        }
+
+        .navb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navl {
+            list-style: none;
+            display: flex;
+
+        }
+
+        .navl a {
+            display: block;
+            padding: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+            border-right: 1px solid white;
+            text-align: center;
+            flex: 1;
+            transition: 0.3s ease;
+        }
+
+        .navl li:last-child a {
+            border-right: none;
+        }
+
+        .navl a:hover {
+            background-color: rgb(218, 165, 32);
+            color: rgb(31, 1, 1);
+            font-weight: bolder;
+        }
+
+        main {
+            flex: 1;
+            background-color: goldenrod;
+            display: flex;
+            /* overflow: hidden; */
+            /* height:100%; */
+            flex-direction: column;
+        }
+
+        .hero {
+            padding: 30px;
+            text-align: center;
+            /* margin: 15px 15px; */
+            display: flex;
+            color: white;
+            /* font-weight: bolder; */
+            background-color: rgb(74, 34, 1);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            /* flex:0 0 40%; */
+            min-height: 40vh;
+        }
+
+        .hero h1 {
+            font-weight: bolder;
+        }
+
+        .hero h2 {
+            font-weight: lighter;
+            line-height: 35px;
+        }
+
+        .btn {
+            background-color: rgb(90, 2, 2);
+            color: white;
+            padding: 9px;
+            border-radius: 10%;
+            width: fit-content;
+        }
+
+        .cardsection {
+            flex: 1;
+            padding: 15px 15px;
+            /* margin: 15px 15px; */
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            justify-content: center;
+            /* align-items: center; */
+            gap: 30px;
+            min-height: 0;
+            /* overflow: hidden; */
+        }
+
+        .info {
+
+            background-color: rgb(255, 228, 196);
+            color: black;
+
+        }
+
+        .para {
+            text-align: center;
+            padding: 6rem;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            gap: 30px;
+            width: 80vw;
+        }
+
+        .p1 {
+            border-bottom: 1px solid black;
+        }
+
+        .para p {
+            font-size: larger;
+        }
+
+        .imgsec {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 68vw;
+            margin: auto;
+            /* gap:2rem; */
+        }
+
+        figure {
+            width: 20vw;
+            height: auto;
+            /* border:1px solid black; */
+            padding: 2px 0;
+        }
+
+        figure img {
+            width: auto;
+            height: 35vh;
+            border: 1px solid black;
+        }
+
+        figcaption {
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        @media(max-width:768px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .hero {
+                padding: 6rem;
+            }
+
+            .navb {
+                position: absolute;
+                top: 100%;
+                background-color: rgb(62, 2, 2);
+                width: 100%;
+            }
+
+            .navl {
+                display: flex;
+            }
+
+            .para {
+                padding: 2rem;
+            }
+
+            .p1 {
+                padding-top: 6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1> Jai Kumars</h1>
+            <p> Website Mit Germanischer Ästhetik</p>
+        </div>
+        <div class="navb">
+            <ul class="navl">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="konige.html">Könige</a></li>
+                <li><a href="kultur.html">Germanische Kultur</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="info">
+            <div class="para p1">
+                <h2>About Us</h2>
+                <p>My name is Jai Kumar, third year BCA student at Vivekananda Institute of Professional Studies, and I
+                    have
+                    been interested in history, cultural aesthetics, languages and literature since school days, and
+                    after
+                    getting into tech, I started experimenting by combining my interests with my web development skills
+                    to
+                    create aesthetics websites. Cultural aesthetics get expressed in the form of working website in my
+                    world. <br><br>
+                    You can contact me at my email id, <a
+                        href="mailto:kumarjai9577@gmail.com">kumarjai9577@gmail.com</a>
+                    for development enquiries.</p>
+            </div>
+
+            <div class="para">
+                <h2>Über uns</h2>
+
+                <p>Mein Name ist Jai Kumar und ich bin Student im dritten Jahr des BCA-Studiengangs am Vivekananda
+                    Institute
+                    of
+                    Professional Studies. Seit meiner Schulzeit interessiere ich mich für Geschichte, kulturelle
+                    Ästhetik,
+                    Sprachen und
+                    Literatur. Nachdem ich mich mit Technologie beschäftigt hatte, begann ich damit zu experimentieren,
+                    diese Interessen
+                    mit meinen Fähigkeiten in der Webentwicklung zu verbinden und ästhetisch ansprechende Websites zu
+                    gestalten.
+                    Für mich wird kulturelle Ästhetik durch funktionierende Websites zum Leben erweckt – dort, wo
+                    Geschichte, Kunst,
+                    Sprache und Technologie zusammenkommen, um bedeutungsvolle digitale Erlebnisse zu schaffen.</p>
+                <p>Bei Fragen zur Webentwicklung können Sie mich unter <a
+                        href="mailto:kumarjai9577@gmail.com">kumarjai9577@gmail.com</a> kontaktieren.</p>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <h2> © Jai 2026</h2>
+    </footer>
+</body>
+
+</html>
