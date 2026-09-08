@@ -9,7 +9,7 @@
         * {
             margin: 0;
             padding: 0;
-            /* BOX-SIZING:border-box */
+            BOX-SIZING:border-box
 
         }
 
@@ -210,22 +210,26 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
+                width:100%;
 
             }
 
             .hero {
-                padding: 6rem;
+                padding: 1rem;
             }
 
             .navb {
-                position: absolute;
-                top: 100%;
+
                 background-color: rgb(62, 2, 2);
                 width: 100%;
             }
 
             .navl {
                 display: flex;
+                flex-shrink: 1;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .para {
