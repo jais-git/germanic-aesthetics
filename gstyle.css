@@ -170,25 +170,29 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         width: 100%;
 
     }
 
     .hero {
-        margin: 6rem 2rem 2rem;
+        /* margin: 6rem 2rem 2rem; */
         padding: 1rem;
         text-align: center;
     }
 
     .navb {
-        position: absolute;
-        top: 100%;
+        /* position: absolute;
+        top: 100%; */
         background-color: rgb(62, 2, 2, 0.97);
         width: 100%;
     }
 
     .navl {
         display: flex;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .cardsection {
