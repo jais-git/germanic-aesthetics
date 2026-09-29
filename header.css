@@ -1,0 +1,140 @@
+header {
+    background-color: rgb(62, 2, 2, 0.97);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.navl.getout{
+    transform: translateX(0%);
+}
+
+.logo {
+    padding: 25px;
+    color: goldenrod;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+
+}
+
+.cross-panel {
+    display: none;
+}
+
+.fa-bars {
+    display: none !important;
+}
+
+.logo h1 {
+    font-weight: bolder;
+}
+
+.logo p {
+    font-size: smaller;
+}
+
+.navb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navl {
+    list-style: none;
+    display: flex;
+
+}
+
+.navl a {
+    display: block;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.navl li:last-child a {
+    border-right: none;
+}
+
+.navl a:hover {
+    background-color: rgb(218, 165, 32, 0.97);
+    color: rgb(31, 1, 1);
+    font-weight: bolder;
+}
+
+@media(max-width:768px) {
+    
+
+    header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    
+
+    .cross-panel {
+
+        text-align: right;
+        padding: 8px;
+        display: block;
+        color: white;
+
+    }
+
+    .fa-xmark:hover {
+        background-color: rgb(188, 67, 67);
+    }
+
+    .fa-bars {
+        display: block !important;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    .fa-bars:hover {
+        background-color: rgb(180, 53, 53);
+    }
+
+    .navb {
+        /* position: absolute;
+        top: 100%; */
+        justify-content: left;
+        position: relative;
+        background-color: rgb(62, 2, 2, 0.97);
+        width: 100vw;
+    }
+
+    .navl {
+        background-color: rgb(62, 2, 2, 0.97);
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 13px;
+        transform: translateX(-100%);
+        transition: 0.4s ease;
+    }
+
+    .navl a {
+        border-right: none;
+    }
+}
