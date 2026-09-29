@@ -16,67 +16,6 @@ body {
 
 }
 
-header {
-    background-color: rgb(62, 2, 2, 0.97);
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-}
-
-.logo {
-    padding: 25px;
-    color: goldenrod;
-    font-weight: bolder;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 17px;
-    flex-direction: column;
-
-}
-
-.logo h1 {
-    font-weight: bolder;
-}
-
-.logo p {
-    font-size: smaller;
-}
-
-.navb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navl {
-    list-style: none;
-    display: flex;
-
-}
-
-.navl a {
-    display: block;
-    padding: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    text-decoration: none;
-    border-right: 1px solid white;
-    text-align: center;
-    flex: 1;
-    transition: 0.3s ease;
-}
-
-.navl li:last-child a {
-    border-right: none;
-}
-
-.navl a:hover {
-    background-color: rgb(218, 165, 32, 0.97);
-    color: rgb(31, 1, 1);
-    font-weight: bolder;
-}
-
 main {
     flex: 1;
     background-color: transparent;
@@ -165,34 +104,12 @@ footer {
         box-sizing: border-box;
     }
 
-    header {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-
-    }
+    
 
     .hero {
         /* margin: 6rem 2rem 2rem; */
         padding: 1rem;
         text-align: center;
-    }
-
-    .navb {
-        /* position: absolute;
-        top: 100%; */
-        background-color: rgb(62, 2, 2, 0.97);
-        width: 100%;
-    }
-
-    .navl {
-        display: flex;
-        flex-shrink: 1;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .cardsection {
