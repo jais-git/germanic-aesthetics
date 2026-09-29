@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Germanic Aesthetics - Contact</title>
+    <link rel="stylesheet" href="header.css">
     <meta
     name="description"
     content="Contact us"
@@ -29,67 +30,7 @@
 
         }
 
-        header {
-            background-color: rgb(62, 2, 2);
-            display: flex;
-            justify-content: space-between;
-            padding: 30px;
-        }
-
-        .logo {
-            padding: 25px;
-            color: goldenrod;
-            font-weight: bolder;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            gap: 17px;
-            flex-direction: column;
-
-        }
-
-        .logo h1 {
-            font-weight: bolder;
-        }
-
-        .logo p {
-            font-size: smaller;
-        }
-
-        .navb {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .navl {
-            list-style: none;
-            display: flex;
-
-        }
-
-        .navl a {
-            display: block;
-            padding: 15px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: white;
-            text-decoration: none;
-            border-right: 1px solid white;
-            text-align: center;
-            flex: 1;
-            transition: 0.3s ease;
-        }
-
-        .navl li:last-child a {
-            border-right: none;
-        }
-
-        .navl a:hover {
-            background-color: rgb(218, 165, 32);
-            color: rgb(31, 1, 1);
-            font-weight: bolder;
-        }
-
+        
         main {
             flex: 1;
             background-color: goldenrod;
@@ -210,32 +151,13 @@
                 box-sizing: border-box;
             }
 
-            header {
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                width:100%;
-
-            }
+            
 
             .hero {
                 padding: 1rem;
             }
 
-            .navb {
-
-                background-color: rgb(62, 2, 2);
-                width: 100%;
-            }
-
-            .navl {
-                display: flex;
-                flex-shrink: 1;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+            
 
             .para {
                 padding: 2rem;
@@ -249,17 +171,21 @@
 </head>
 
 <body>
-    <header>
+   <header>
         <div class="logo">
             <h1> Jai Kumars</h1>
             <p> Website Mit Germanischer Ästhetik</p>
         </div>
         <div class="navb">
+            <i class="fa-solid fa-bars"></i>
             <ul class="navl">
-                <li><a href="index.html">Startseite</a></li>
+                <div class="cross-panel">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <li><a href="#">Startseite</a></li>
                 <li><a href="konige.html">Könige</a></li>
                 <li><a href="kultur.html">Germanische Kultur</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="kontact.html">Kontakt</a></li>
             </ul>
         </div>
     </header>
@@ -306,6 +232,8 @@
     <footer>
         <h2> © Jai 2026</h2>
     </footer>
+    <script src="header.js"></script>
 </body>
+    
 
 </html>
